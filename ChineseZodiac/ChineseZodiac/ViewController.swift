@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         let s: String = textField.text!;
         if Int(s) == nil {
-            userOutputLabel.text = "Sorry, \(s) Please Enter Your Birth Year. Try again.";
+            userOutputLabel.text = "Sorry, \(s) is not a year. Please Enter Your Birth Year. Try again.";
         } else {
             textField.resignFirstResponder();
         }
